@@ -1,11 +1,110 @@
-h1{
-    text-align: center;
-    font-style: oblique;
-    color:rgb(242, 111, 133);
+.header {
+	top: 0;
+	color: #fff;
+	background-color: #000;
+	height: 190px;
+} 
+.frame {
+	position: relative;
+	max-width: 450px;
+	margin: 2% auto;
 }
 
-    *{
-        text-align: left;
-        font-size:large;
-    }
-   
+body {
+	background-color: #000;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+header img {
+	margin: 0 auto;
+}
+/* styling for navigation buttons */
+  nav {
+    padding: 1%;
+    margin-bottom: 1%;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+  } 
+  
+  nav li {
+    font-size: 1.5em;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-top: 1px solid #fff;
+  }
+  
+  nav li a {
+    display: block;
+    color: #d3d3d3;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+  }
+  nav li {
+		border-top: none;
+		display: inline-block;
+		border-right: 1px solid #fff;
+	}
+	
+	nav li:last-child {
+		border-right: none;
+	}
+	
+	nav li a {
+		padding: 0.1em 0.75em;
+	}
+	
+
+ /* .flaticon-phone-call-1 {
+    font-weight:bold;
+    background-image: url(phone.jpg);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: left;
+  }
+  .email{
+    font-weight:bold;
+    background-image: url(email.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: left;
+
+  }
+  */
+h2,h3,h4,h5{
+    text-align: center;
+    font-size:large;
+    font-family:"Papyrus", fantasy;
+    background-color:white;
+    color:darkred;
+}
+ 
+h1{
+    text-align: center;
+    font-family: fantasy;
+    color:rgb(255, 255, 255);
+}
+
+body{
+    background-color: rgb(62, 62, 62);
+}
+p{
+    color:white;
+}
+nav{
+    color:white;
+}
+
+  nav li:hover {
+    background-color: darkred;
+  }
+
+main{
+  margin-top:-10%;
+
+}
