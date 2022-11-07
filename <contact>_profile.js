@@ -1,4 +1,4 @@
-
+    var fields = {};
    document.addEventListener("DOMContentLoaded", function() {
     fields.firstName = document.getElementById('firstName');
     fields.lastName = document.getElementById('lastName');
@@ -19,7 +19,9 @@
    }
  
    function fieldValidation(field, validationFunction) {
+   // alert("field passed into function " + field)
     if (field == null) return false;
+    //alert("validation field is not null")
    
     let isFieldValid = validationFunction(field.value)
     if (!isFieldValid) {
@@ -31,6 +33,7 @@
     return isFieldValid;
    }
    function isValid() {
+    //alert("in isvalid function")
     var valid = true;
     
     valid &= fieldValidation(fields.firstName, isNotEmpty);
@@ -38,6 +41,7 @@
     valid &= fieldValidation(fields.email, isEmail);
     valid &= fieldValidation(fields.question, isNotEmpty);
    
+    //alert("leaving function isvalid value" + valid)
     return valid;
    }
 
@@ -52,13 +56,14 @@
    }
 
    function sendContact(){
-
+   
     if (isValid()){
-        let usr = new User(firstName.value, lastName.value, email.value, resume.checked);
-
-            alert('${usr.firstName} thanks for registering.')
+        
+       //let usr = new User(firstName.value, lastName.value, email.value, resume.checked, question.value);
+        //alert("in send contact function is true")
+            alert("Thanks for contacting me!")
         }
         else{
             alert("There was an error")
-        }
+        } 
    }
