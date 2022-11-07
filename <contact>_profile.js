@@ -54,6 +54,7 @@
 
    function sendContact(){
 
+    alert("button clicked");
     if (isValid()){
         let usr = new User(firstName.value, lastName.value, email.value, newsletter.checked);
 
