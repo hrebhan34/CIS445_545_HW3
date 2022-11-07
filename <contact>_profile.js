@@ -1,10 +1,9 @@
-<form onsubmit="return false"></form>
 
    document.addEventListener("DOMContentLoaded", function() {
     fields.firstName = document.getElementById('firstName');
     fields.lastName = document.getElementById('lastName');
     fields.email = document.getElementById('email');
-    fields.newsletter = document.getElementById('newsletter');
+    fields.resume = document.getElementById('resume');
     fields.question = document.getElementById('question');
    })
    function isNotEmpty(value) {
@@ -43,20 +42,19 @@
    }
 
    class User {
-    constructor(firstName, lastName, email, newsletter, question) {
+    constructor(firstName, lastName, email, resume, question) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.email = email;
-    this.newsletter = newsletter;
+    this.resume = resume;
     this.question = question;
     }
    }
 
    function sendContact(){
 
-    alert("button clicked");
     if (isValid()){
-        let usr = new User(firstName.value, lastName.value, email.value, newsletter.checked);
+        let usr = new User(firstName.value, lastName.value, email.value, resume.checked);
 
             alert('${usr.firstName} thanks for registering.')
         }
